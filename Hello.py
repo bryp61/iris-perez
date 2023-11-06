@@ -22,6 +22,7 @@ def run():
     st.set_page_config(
         page_title="Hello",
         page_icon="👋",
+        # d = {'KNN': ["Nearest Neighbor", "Supervised"], 'Decision Tree': ["Decision Tree", "Supervised"], 'SVM': ["Support Vector Machine", "Supervised"]}
     )
 
     st.write("# Welcome to Streamlit! 👋")
@@ -43,8 +44,14 @@ def run():
         - Use a neural net to [analyze the Udacity Self-driving Car Image
           Dataset](https://github.com/streamlit/demo-self-driving)
         - Explore a [New York City rideshare dataset](https://github.com/streamlit/demo-uber-nyc-pickups)
-    """
-    )
+    """)
+
+    models = st.multiselect(
+        "ML Models", ["KNN", "SVM", "Bayes", "Tree"], ["KNN", "Tree"])
+    }
+
+    
+
 
 
 if __name__ == "__main__":
